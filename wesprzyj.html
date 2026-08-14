@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zaangażuj się — Program STACJA</title>
+<meta name="description" content="Wesprzyj Program STACJA: wpłata jednorazowa lub cykliczna, 1,5% podatku, wolontariat, współpraca. Zobacz, na co idą pieniądze.">
+<link rel="stylesheet" href="assets/css/stacja.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Przejdź do treści</a>
+
+<div class="a11y">
+  <div class="a11y__inner">
+    <span class="a11y__label">Dostępność</span>
+    <div class="a11y__group" role="group" aria-labelledby="a11y-size-label">
+      <span class="sr-only" id="a11y-size-label">Rozmiar tekstu</span>
+      <button type="button" class="a11y__btn a11y__btn--a1" data-a11y-size="1" aria-pressed="true">A<span class="sr-only"> — rozmiar standardowy</span></button>
+      <button type="button" class="a11y__btn a11y__btn--a2" data-a11y-size="2" aria-pressed="false">A<span class="sr-only"> — tekst powiększony o jedną czwartą</span></button>
+      <button type="button" class="a11y__btn a11y__btn--a3" data-a11y-size="3" aria-pressed="false">A<span class="sr-only"> — tekst powiększony o połowę</span></button>
+    </div>
+    <div class="a11y__group">
+      <button type="button" class="a11y__btn" data-a11y="contrast" aria-pressed="false">Wysoki kontrast</button>
+      <button type="button" class="a11y__btn" data-a11y="underline" aria-pressed="false">Podkreśl linki</button>
+      <button type="button" class="a11y__btn" data-a11y="motion" aria-pressed="false">Zatrzymaj animacje</button>
+      <button type="button" class="a11y__btn" data-a11y="reset">Przywróć domyślne</button>
+    </div>
+  </div>
+</div>
+
+<header>
+<nav class="nav" aria-label="Nawigacja główna">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html"><img src="assets/img/logo-stacja.png" alt="Program STACJA — strona główna"></a>
+    <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-panel">
+      <span class="bars" aria-hidden="true"></span>
+      <span class="nav__toggle-text">Menu</span>
+    </button>
+    <div class="nav__panel" id="nav-panel">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">O nas</a></li>
+        <li><a class="nav__link" href="index.html#obszary">Co robimy</a></li>
+        <li><a class="nav__link" href="kalendarz.html">Kalendarz</a></li>
+        <li><a class="nav__link" href="szukam-pomocy.html">Szukam pomocy</a></li>
+        <li><a class="nav__link" href="wesprzyj.html" aria-current="page">Zaangażuj się</a></li>
+      </ul>
+      <div class="nav__extras">
+        <a class="btn btn--fill" href="#wplata">Wesprzyj nas</a>
+        <div class="lang">
+          <a href="#" aria-current="true" lang="pl">PL</a>
+          <a href="#" lang="en" hreflang="en"><span class="sr-only">Switch to English — </span>EN</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main id="main">
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero__media">
+    <div class="hero__photo hero__photo--teren" role="img" aria-label="Edukatorzy STACJI podczas dyżuru w terenie"></div>
+    <div class="hero__fade" aria-hidden="true"></div>
+  </div>
+  <div class="hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow eyebrow--on-dark">Zaangażuj się</span>
+      <h1>Twoje wsparcie<br>to czyjś <em>pierwszy krok.</em></h1>
+      <p class="hero__lead">Streetworking nie działa na kampanie i deadline'y. Działa dlatego, że ktoś jest w tym samym miejscu co tydzień, przez lata. Regularne wsparcie to jedyne, co pozwala nam tam być.</p>
+      <div class="hero__cta">
+        <a class="btn btn--fill btn--lg" href="#wplata">Wpłać darowiznę</a>
+        <a class="btn btn--ghost-dark btn--lg" href="#wolontariat">Zostań wolontariuszem</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Na co idą pieniądze ===== -->
+<section class="section" aria-labelledby="naco-h">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Na co idą pieniądze</span>
+      <h2 id="naco-h">Konkretnie, nie ogólnie.</h2>
+      <p class="section__intro">Nie obiecujemy „zmiany świata". Poniżej realne koszty jednego miesiąca pracy w terenie.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat__n">30 zł</div>
+        <p class="stat__d">Zestaw materiałów profilaktycznych na jeden wieczór partyworkingu.</p>
+      </div>
+      <div class="stat">
+        <div class="stat__n">120 zł</div>
+        <p class="stat__d">Godzina konsultacji psychologicznej dla osoby w kryzysie.</p>
+      </div>
+      <div class="stat">
+        <div class="stat__n">400 zł</div>
+        <p class="stat__d">Jeden pełny dyżur streetworkerski dwuosobowego zespołu.</p>
+      </div>
+      <div class="stat">
+        <div class="stat__n">1 500 zł</div>
+        <p class="stat__d">Miesiąc obecności w jednej lokalizacji — dworzec, bulwary albo klub.</p>
+      </div>
+    </div>
+
+    <p style="margin-top:24px;font-size:.875rem;color:var(--tx-quiet);max-width:62ch">Kwoty poglądowe — do zastąpienia danymi z ostatniego sprawozdania finansowego przed publikacją.</p>
+  </div>
+</section>
+
+<!-- ===== Wpłata ===== -->
+<section class="section section--warm" id="wplata" aria-labelledby="wplata-h">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Wpłać darowiznę</span>
+      <h2 id="wplata-h">Wybierz, jak chcesz pomóc.</h2>
+    </div>
+
+    <div class="grid-2">
+      <article class="card">
+        <h3>Wsparcie regularne</h3>
+        <p>Stała kwota co miesiąc. Dla nas najcenniejsze — pozwala planować dyżury z wyprzedzeniem, a nie z miesiąca na miesiąc. Możesz odwołać w każdej chwili, bez podawania powodu.</p>
+        <p class="card__foot"><a class="btn btn--fill" href="#">Ustaw wpłatę miesięczną</a></p>
+      </article>
+      <article class="card">
+        <h3>Wpłata jednorazowa</h3>
+        <p>Dowolna kwota, przelewem albo BLIKiem. Otrzymasz potwierdzenie na e-mail, a darowiznę możesz odliczyć od podatku.</p>
+        <p class="card__foot"><a class="btn btn--fill" href="#">Wpłać teraz</a></p>
+      </article>
+      <article class="card">
+        <h3>Przelew tradycyjny</h3>
+        <p>Stowarzyszenie Program STACJA<br>
+           <span style="font-weight:800;color:var(--tx-strong)">00 0000 0000 0000 0000 0000 0000</span><br>
+           Tytuł: darowizna na cele statutowe</p>
+        <p style="font-size:.875rem;color:var(--tx-quiet)">Numer konta do uzupełnienia przed publikacją.</p>
+      </article>
+      <article class="card">
+        <h3>1,5% podatku</h3>
+        <p>Nic Cię nie kosztuje — to część podatku, który i tak zapłacisz. Wpisz numer KRS w zeznaniu rocznym.</p>
+        <p class="card__foot" style="font-weight:800;color:var(--tx-strong);font-size:1.25rem">KRS 0000000000</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Wolontariat ===== -->
+<section class="band" id="wolontariat" aria-labelledby="wol-h">
+  <div class="band__photo" role="img" aria-label="Zespół STACJI podczas dyżuru w przestrzeni miejskiej"></div>
+  <div class="band__veil" aria-hidden="true"></div>
+  <div class="band__inner">
+    <div class="band__plate">
+      <span class="eyebrow eyebrow--on-dark">Wolontariat</span>
+      <h2 id="wol-h">Nie musisz być psychologiem.</h2>
+      <p>Szukamy osób, które potrafią być obok i nie oceniać. Reszty uczymy — przed pierwszym dyżurem przechodzisz szkolenie, a w terenie zawsze pracujesz w parze z doświadczoną osobą. Przyjmujemy osoby pełnoletnie.</p>
+      <div class="hero__cta">
+        <a class="btn btn--fill" href="#">Zgłoś się na wolontariat</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="jak-wol-h">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Jak zostać wolontariuszem</span>
+      <h2 id="jak-wol-h">Cztery kroki.</h2>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <h3>Wypełniasz formularz</h3>
+        <p>Pytamy o motywację i dostępność. Nie wymagamy doświadczenia ani wykształcenia kierunkowego.</p>
+      </li>
+      <li class="step">
+        <h3>Rozmawiamy</h3>
+        <p>Spotkanie z koordynatorką — na żywo albo online. To też Twoja okazja, żeby sprawdzić, czy to miejsce dla Ciebie.</p>
+      </li>
+      <li class="step">
+        <h3>Szkolenie</h3>
+        <p>Dwa dni: redukcja szkód, pierwsza pomoc, granice w kontakcie, procedury bezpieczeństwa i ochrony dzieci.</p>
+      </li>
+      <li class="step">
+        <h3>Pierwszy dyżur w parze</h3>
+        <p>Wchodzisz w teren z osobą doświadczoną. Po każdym dyżurze jest omówienie, a raz w miesiącu superwizja zespołu.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== Inne formy ===== -->
+<section class="section section--warm" aria-labelledby="inne-h">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Inne formy współpracy</span>
+      <h2 id="inne-h">Nie tylko pieniądze i czas.</h2>
+    </div>
+    <div class="grid-2">
+      <article class="card">
+        <h3>Firmy</h3>
+        <p>Wsparcie finansowe, wolontariat pracowniczy, pomoc pro bono — księgowość, prawo, druk materiałów. Rozliczamy się z każdej złotówki.</p>
+        <p class="card__foot"><a class="btn btn--ghost" href="mailto:partnerzy@programstacja.org.pl">Napisz do nas</a></p>
+      </article>
+      <article class="card">
+        <h3>Kluby i organizatorzy imprez</h3>
+        <p>Wpuść nas na swoje wydarzenie. Punkt informacyjny, woda, przeszkolony zespół. Twoi goście wracają do domu bezpieczniej.</p>
+        <p class="card__foot"><a class="btn btn--ghost" href="mailto:partyworking@programstacja.org.pl">Umów partyworking</a></p>
+      </article>
+      <article class="card">
+        <h3>Szkoły i uczelnie</h3>
+        <p>Warsztaty z edukacji zdrowotnej i seksualnej oraz redukcji szkód, prowadzone językiem, którym młodzi ludzie faktycznie mówią.</p>
+        <p class="card__foot"><a class="btn btn--ghost" href="mailto:edukacja@programstacja.org.pl">Zamów warsztat</a></p>
+      </article>
+      <article class="card">
+        <h3>Rzeczy, nie przelewy</h3>
+        <p>Potrzebujemy termosów, powerbanków, śpiworów, opatrunków i materiałów drukowanych. Lista aktualizowana co miesiąc.</p>
+        <p class="card__foot"><a class="btn btn--ghost" href="#">Zobacz aktualną listę</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section cta" aria-labelledby="cta-h">
+  <div class="wrap">
+    <span class="eyebrow">Zacznij dziś</span>
+    <h2 id="cta-h">Bądź obecny tam, gdzie są młodzi ludzie.</h2>
+    <div class="hero__cta">
+      <a class="btn btn--fill btn--lg" href="#wplata">Wpłać darowiznę</a>
+      <a class="btn btn--ghost btn--lg" href="#wolontariat">Zostań wolontariuszem</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <h2>Kontakt</h2>
+        <ul class="foot__links">
+          <li><a href="tel:+48221234567">22 123 45 67</a></li>
+          <li><a href="mailto:biuro@programstacja.org.pl">biuro@programstacja.org.pl</a></li>
+          <li>Warszawa</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Organizacja</h3>
+        <ul class="foot__links">
+          <li><a href="#">Statut</a></li>
+          <li><a href="#">Sprawozdania</a></li>
+          <li><a href="#">Polityka ochrony dzieci</a></li>
+          <li><a href="#">RODO</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Dostępność</h3>
+        <ul class="foot__links">
+          <li><a href="#">Deklaracja dostępności</a></li>
+          <li><a href="szukam-pomocy.html#etr">Tekst łatwy do czytania</a></li>
+          <li><a href="szukam-pomocy.html#pjm">Informacja w PJM</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Śledź nas</h3>
+        <ul class="foot__links">
+          <li><a href="#">Instagram — @programstacja</a></li>
+          <li><a href="#">Facebook — @programstacja</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <img class="foot__logo" src="assets/img/logo-stacja.png" alt="">
+      <span>© 2026 Stowarzyszenie Program STACJA</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/stacja.js"></script>
+</body>
+</html>

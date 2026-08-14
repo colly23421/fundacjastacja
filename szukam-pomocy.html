@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Szukam pomocy — Program STACJA</title>
+<meta name="description" content="Jak uzyskać wsparcie w Programie STACJA. Bez oceniania, bez opłat, bez skierowania. Kontakt, telefony zaufania i informacja w PJM.">
+<link rel="stylesheet" href="assets/css/stacja.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Przejdź do treści</a>
+
+<div class="a11y">
+  <div class="a11y__inner">
+    <span class="a11y__label">Dostępność</span>
+    <div class="a11y__group" role="group" aria-labelledby="a11y-size-label">
+      <span class="sr-only" id="a11y-size-label">Rozmiar tekstu</span>
+      <button type="button" class="a11y__btn a11y__btn--a1" data-a11y-size="1" aria-pressed="true">A<span class="sr-only"> — rozmiar standardowy</span></button>
+      <button type="button" class="a11y__btn a11y__btn--a2" data-a11y-size="2" aria-pressed="false">A<span class="sr-only"> — tekst powiększony o jedną czwartą</span></button>
+      <button type="button" class="a11y__btn a11y__btn--a3" data-a11y-size="3" aria-pressed="false">A<span class="sr-only"> — tekst powiększony o połowę</span></button>
+    </div>
+    <div class="a11y__group">
+      <button type="button" class="a11y__btn" data-a11y="contrast" aria-pressed="false">Wysoki kontrast</button>
+      <button type="button" class="a11y__btn" data-a11y="underline" aria-pressed="false">Podkreśl linki</button>
+      <button type="button" class="a11y__btn" data-a11y="motion" aria-pressed="false">Zatrzymaj animacje</button>
+      <button type="button" class="a11y__btn" data-a11y="reset">Przywróć domyślne</button>
+    </div>
+  </div>
+</div>
+
+<header>
+<nav class="nav" aria-label="Nawigacja główna">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html"><img src="assets/img/logo-stacja.png" alt="Program STACJA — strona główna"></a>
+    <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-panel">
+      <span class="bars" aria-hidden="true"></span>
+      <span class="nav__toggle-text">Menu</span>
+    </button>
+    <div class="nav__panel" id="nav-panel">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">O nas</a></li>
+        <li><a class="nav__link" href="index.html#obszary">Co robimy</a></li>
+        <li><a class="nav__link" href="kalendarz.html">Kalendarz</a></li>
+        <li><a class="nav__link" href="szukam-pomocy.html" aria-current="page">Szukam pomocy</a></li>
+        <li><a class="nav__link" href="wesprzyj.html">Zaangażuj się</a></li>
+      </ul>
+      <div class="nav__extras">
+        <a class="btn btn--fill" href="wesprzyj.html">Wesprzyj nas</a>
+        <div class="lang">
+          <a href="#" aria-current="true" lang="pl">PL</a>
+          <a href="#" lang="en" hreflang="en"><span class="sr-only">Switch to English — </span>EN</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main id="main">
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero__media">
+    <div class="hero__photo" role="img" aria-label="Portret młodej osoby patrzącej w bok"></div>
+    <div class="hero__fade" aria-hidden="true"></div>
+  </div>
+  <div class="hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow eyebrow--on-dark">Szukam pomocy</span>
+      <h1>Nie musisz mieć<br>gotowej <em>historii.</em></h1>
+      <p class="hero__lead">Możesz napisać jedno zdanie. Możesz nie wiedzieć, od czego zacząć. To wystarczy, żeby się odezwać. Nie oceniamy, nie wymagamy skierowania i nie bierzemy pieniędzy.</p>
+      <div class="hero__cta">
+        <a class="btn btn--fill btn--lg" href="#kontakt">Skontaktuj się z nami</a>
+        <button type="button" class="btn btn--ghost-dark btn--lg etr-switch" data-a11y="etr" aria-pressed="false" style="border-color:rgba(243,242,242,.5);color:var(--tx-on-dark);background:transparent">Tekst łatwy do czytania</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Pomoc natychmiastowa ===== -->
+<section class="section" style="padding-top:clamp(36px,5vw,56px)" aria-labelledby="pilne-h">
+  <div class="wrap">
+    <div class="help">
+      <h2 id="pilne-h">Jeśli potrzebujesz pomocy teraz</h2>
+      <p data-standard>Te numery działają całą dobę, są bezpłatne i anonimowe. Nie musisz podawać nazwiska.</p>
+      <p data-etr>Zadzwoń. Można dzwonić w dzień i w nocy. To nic nie kosztuje. Nie musisz mówić, jak się nazywasz.</p>
+      <div class="help__row">
+        <div class="help__item">
+          <div class="help__k">Dzieci i młodzież · całą dobę</div>
+          <div class="help__v"><a href="tel:116111">116 111</a></div>
+        </div>
+        <div class="help__item">
+          <div class="help__k">Kryzys psychiczny · całą dobę</div>
+          <div class="help__v"><a href="tel:800702222">800 70 2222</a></div>
+        </div>
+        <div class="help__item">
+          <div class="help__k">Zagrożenie życia</div>
+          <div class="help__v"><a href="tel:112">112</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Z czym możesz przyjść ===== -->
+<section class="section" style="padding-top:0" aria-labelledby="zczym-h">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Z czym możesz przyjść</span>
+      <h2 id="zczym-h">Nie ma sprawy zbyt małej.</h2>
+    </div>
+
+    <div data-standard>
+      <div class="rows">
+        <article class="row">
+          <h3>Substancje</h3>
+          <p>Chcesz wiedzieć, co bierzesz i jak zmniejszyć ryzyko. Albo martwisz się, że to wymyka się spod kontroli. Rozmawiamy o faktach, nie o winie.</p>
+        </article>
+        <article class="row">
+          <h3>Zdrowie seksualne</h3>
+          <p>Pytania o HIV, infekcje przenoszone drogą płciową, antykoncepcję, testowanie. Powiemy, gdzie i jak zrobić test bezpłatnie i anonimowo.</p>
+        </article>
+        <article class="row">
+          <h3>Kryzys psychiczny</h3>
+          <p>Lęk, obniżony nastrój, myśli, które Cię przerażają, poczucie, że nie dajesz rady. Wysłuchamy i pomożemy znaleźć dalsze wsparcie.</p>
+        </article>
+        <article class="row">
+          <h3>Przemoc</h3>
+          <p>W domu, w związku, w szkole, w sieci. Pomożemy nazwać, co się dzieje, i zaplanować bezpieczne kroki — w Twoim tempie.</p>
+        </article>
+        <article class="row">
+          <h3>Dach nad głową</h3>
+          <p>Nie masz gdzie spać albo mieszkanie przestało być bezpieczne. Podpowiemy, gdzie szukać miejsca i jak załatwić formalności.</p>
+        </article>
+      </div>
+    </div>
+
+    <div data-etr>
+      <p>Możesz do nas przyjść, kiedy:</p>
+      <ul style="font-size:1.0625rem;line-height:1.9">
+        <li>Bierzesz jakieś substancje i chcesz o tym pogadać.</li>
+        <li>Masz pytania o seks, zdrowie i badania.</li>
+        <li>Jest Ci smutno albo się boisz.</li>
+        <li>Ktoś Cię krzywdzi.</li>
+        <li>Nie masz gdzie spać.</li>
+      </ul>
+      <p>Możesz też przyjść z czymś innym. Wszystko jest ważne.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Co się stanie ===== -->
+<section class="section section--warm" aria-labelledby="kroki-h">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Co się stanie, kiedy się odezwiesz</span>
+      <h2 id="kroki-h">Bez niespodzianek.</h2>
+      <p class="section__intro" data-standard>Wiemy, że pierwszy kontakt bywa najtrudniejszy. Dlatego mówimy z góry, jak to wygląda.</p>
+      <p class="section__intro" data-etr>Napiszemy, co będzie po kolei. Żeby nic Cię nie zaskoczyło.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step">
+        <h3>Piszesz albo dzwonisz</h3>
+        <p data-standard>Wybierasz sposób, który jest dla Ciebie wygodny. Możesz nie podawać nazwiska.</p>
+        <p data-etr>Możesz napisać wiadomość albo zadzwonić. Nie musisz mówić, jak się nazywasz.</p>
+      </li>
+      <li class="step">
+        <h3>Odpowiadamy w ciągu dwóch dni roboczych</h3>
+        <p data-standard>Pytamy tylko o to, co jest potrzebne, żeby dobrze pomóc. Nie musisz odpowiadać na wszystko.</p>
+        <p data-etr>Odezwiemy się w ciągu 2 dni. Zapytamy o kilka rzeczy. Możesz nie odpowiadać, jeśli nie chcesz.</p>
+      </li>
+      <li class="step">
+        <h3>Umawiamy rozmowę</h3>
+        <p data-standard>Na żywo w naszym punkcie, przez telefon albo online. Ty decydujesz gdzie i kiedy.</p>
+        <p data-etr>Umówimy się na spotkanie. Może być u nas, przez telefon albo przez internet. Ty wybierasz.</p>
+      </li>
+      <li class="step">
+        <h3>Ustalamy, co dalej</h3>
+        <p data-standard>Czasem wystarczy jedna rozmowa. Czasem umawiamy kolejne albo kierujemy do lekarza, prawnika czy psychoterapeuty. Nic nie dzieje się bez Twojej zgody.</p>
+        <p data-etr>Razem zdecydujemy, co robić dalej. Nic nie zrobimy bez Twojej zgody.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== PJM ===== -->
+<section class="section" id="pjm" aria-labelledby="pjm-h">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Polski Język Migowy</span>
+      <h2 id="pjm-h">Informacja w PJM</h2>
+      <p class="section__intro">Nagranie tłumaczone na Polski Język Migowy: kim jesteśmy, z czym można do nas przyjść i jak się skontaktować. Wideo ma napisy i transkrypcję.</p>
+    </div>
+
+    <!-- MIEJSCE NA NAGRANIE. Wymagane: <track kind="captions">, transkrypcja poniżej, brak autoodtwarzania. -->
+    <div style="border:2px dashed var(--rule);padding:clamp(28px,5vw,48px);text-align:center;background:var(--paper-warm)">
+      <p style="font-weight:800;color:var(--tx-strong)">Miejsce na nagranie w PJM</p>
+      <p style="margin-top:8px;color:var(--tx-quiet)">Do przygotowania przez organizację. Format: MP4, napisy zamknięte w pliku VTT, transkrypcja tekstowa obok odtwarzacza.</p>
+    </div>
+
+    <details style="margin-top:24px;border:2px solid var(--rule);padding:18px 20px">
+      <summary style="font-weight:800;cursor:pointer;color:var(--tx-strong)">Transkrypcja nagrania</summary>
+      <p style="margin-top:14px">Treść transkrypcji zostanie dodana razem z nagraniem.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ===== Kontakt ===== -->
+<section class="section section--warm" id="kontakt" aria-labelledby="kontakt-h">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Kontakt</span>
+      <h2 id="kontakt-h">Odezwij się tak, jak Ci wygodnie.</h2>
+    </div>
+
+    <div class="grid-2">
+      <article class="card">
+        <h3>Telefon</h3>
+        <p>Poniedziałek–piątek, 10:00–18:00. Możesz zadzwonić i się rozłączyć — oddzwonimy tylko, jeśli o to poprosisz.</p>
+        <p class="card__foot"><a class="btn btn--ghost" href="tel:+48221234567">22 123 45 67</a></p>
+      </article>
+      <article class="card">
+        <h3>E-mail</h3>
+        <p>Napisz tyle, ile chcesz. Odpisujemy w ciągu dwóch dni roboczych.</p>
+        <p class="card__foot"><a class="btn btn--ghost" href="mailto:pomoc@programstacja.org.pl">pomoc@programstacja.org.pl</a></p>
+      </article>
+      <article class="card">
+        <h3>Punkt w Warszawie</h3>
+        <p>Wejście z poziomu ulicy, bez schodów. Toaleta dostosowana. Jeśli potrzebujesz tłumacza PJM, napisz wcześniej — zorganizujemy.</p>
+        <p class="card__foot"><a class="btn btn--ghost" href="#">Zobacz dojazd</a></p>
+      </article>
+      <article class="card">
+        <h3>W terenie</h3>
+        <p>Nasi streetworkerzy są na dworcach, bulwarach i w klubach. Poznasz ich po pomarańczowych identyfikatorach STACJI. Możesz po prostu podejść.</p>
+        <p class="card__foot"><a class="btn btn--ghost" href="index.html#obszary">Gdzie nas spotkasz</a></p>
+      </article>
+    </div>
+
+    <p style="margin-top:28px;max-width:62ch;color:var(--tx-quiet);font-size:.9375rem" data-standard>Rozmowa jest poufna. Wyjątki opisuje prawo — musimy zareagować, gdy komuś grozi bezpośrednie niebezpieczeństwo. Zawsze uprzedzamy o tym wcześniej.</p>
+    <p style="margin-top:28px;max-width:46ch;font-size:1.0625rem" data-etr>To, co nam powiesz, zostaje między nami. Powiemy komuś tylko wtedy, gdy komuś grozi niebezpieczeństwo. Wtedy najpierw powiemy o tym Tobie.</p>
+  </div>
+</section>
+
+</main>
+
+<button type="button" class="exit" aria-label="Szybkie wyjście — przejdź do wyszukiwarki i ukryj tę stronę w historii">
+  <span aria-hidden="true">✕</span> Szybkie wyjście
+</button>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <h2>Kontakt</h2>
+        <ul class="foot__links">
+          <li><a href="tel:+48221234567">22 123 45 67</a></li>
+          <li><a href="mailto:biuro@programstacja.org.pl">biuro@programstacja.org.pl</a></li>
+          <li>Warszawa</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Organizacja</h3>
+        <ul class="foot__links">
+          <li><a href="#">Statut</a></li>
+          <li><a href="#">Sprawozdania</a></li>
+          <li><a href="#">Polityka ochrony dzieci</a></li>
+          <li><a href="#">RODO</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Dostępność</h3>
+        <ul class="foot__links">
+          <li><a href="#">Deklaracja dostępności</a></li>
+          <li><a href="#pjm">Informacja w PJM</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Śledź nas</h3>
+        <ul class="foot__links">
+          <li><a href="#">Instagram — @programstacja</a></li>
+          <li><a href="#">Facebook — @programstacja</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <img class="foot__logo" src="assets/img/logo-stacja.png" alt="">
+      <span>© 2026 Stowarzyszenie Program STACJA</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/stacja.js"></script>
+</body>
+</html>
