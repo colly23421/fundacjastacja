@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Program STACJA — jesteśmy tam, gdzie jesteś ty</title>
+<meta name="description" content="Stowarzyszenie Program STACJA. Streetworking, partyworking i wsparcie młodych ludzi w Warszawie od 2003 roku. Bez oceniania.">
+<link rel="stylesheet" href="assets/css/stacja.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Przejdź do treści</a>
+
+<!-- ===== Pasek dostępności ===== -->
+<div class="a11y">
+  <div class="a11y__inner">
+    <span class="a11y__label" id="a11y-label">Dostępność</span>
+
+    <div class="a11y__group" role="group" aria-labelledby="a11y-size-label">
+      <span class="sr-only" id="a11y-size-label">Rozmiar tekstu</span>
+      <button type="button" class="a11y__btn a11y__btn--a1" data-a11y-size="1" aria-pressed="true">A<span class="sr-only"> — rozmiar standardowy</span></button>
+      <button type="button" class="a11y__btn a11y__btn--a2" data-a11y-size="2" aria-pressed="false">A<span class="sr-only"> — tekst powiększony o jedną czwartą</span></button>
+      <button type="button" class="a11y__btn a11y__btn--a3" data-a11y-size="3" aria-pressed="false">A<span class="sr-only"> — tekst powiększony o połowę</span></button>
+    </div>
+
+    <div class="a11y__group">
+      <button type="button" class="a11y__btn" data-a11y="contrast" aria-pressed="false">Wysoki kontrast</button>
+      <button type="button" class="a11y__btn" data-a11y="underline" aria-pressed="false">Podkreśl linki</button>
+      <button type="button" class="a11y__btn" data-a11y="motion" aria-pressed="false">Zatrzymaj animacje</button>
+      <button type="button" class="a11y__btn" data-a11y="reset">Przywróć domyślne</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Nawigacja ===== -->
+<header>
+<nav class="nav" aria-label="Nawigacja główna">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html">
+      <img src="assets/img/logo-stacja.png" alt="Program STACJA — strona główna">
+    </a>
+
+    <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-panel">
+      <span class="bars" aria-hidden="true"></span>
+      <span class="nav__toggle-text">Menu</span>
+    </button>
+
+    <div class="nav__panel" id="nav-panel">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html" aria-current="page">O nas</a></li>
+        <li><a class="nav__link" href="index.html#obszary">Co robimy</a></li>
+        <li><a class="nav__link" href="kalendarz.html">Kalendarz</a></li>
+        <li><a class="nav__link" href="szukam-pomocy.html">Szukam pomocy</a></li>
+        <li><a class="nav__link" href="wesprzyj.html">Zaangażuj się</a></li>
+      </ul>
+      <div class="nav__extras">
+        <a class="btn btn--fill" href="wesprzyj.html">Wesprzyj nas</a>
+        <div class="lang">
+          <a href="#" aria-current="true" lang="pl">PL</a>
+          <a href="#" lang="en" hreflang="en"><span class="sr-only">Switch to English — </span>EN</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main id="main">
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero__media">
+    <div class="hero__photo" role="img" aria-label="Portret młodej osoby patrzącej w bok"></div>
+    <div class="hero__fade" aria-hidden="true"></div>
+  </div>
+  <div class="hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow eyebrow--on-dark">Fundacja Stacja — Warszawa</span>
+      <h1>Jesteśmy tam,<br>gdzie <em>jesteś&nbsp;ty.</em></h1>
+      <p class="hero__lead">Wychodzimy do młodych ludzi — na dworce, ulice, do klubów i online. Dajemy czas, obecność i zaufanie. Wsparcie zaczyna się tam, gdzie ktoś nie ocenia.</p>
+      <div class="hero__cta">
+        <a class="btn btn--fill btn--lg" href="szukam-pomocy.html">Szukam pomocy</a>
+        <a class="btn btn--ghost-dark btn--lg" href="wesprzyj.html">Wesprzyj nas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Obszary działań ===== -->
+<section class="section" id="obszary" aria-labelledby="obszary-h">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Czym się zajmujemy</span>
+      <h2 id="obszary-h">Sześć obszarów, jedna zasada: bez oceniania.</h2>
+    </div>
+
+    <div class="rows">
+      <article class="row">
+        <h3>Streetworking</h3>
+        <p>Wychodzimy tam, gdzie są młodzi ludzie: dworce, parki, bulwary, uczelnie. Rozmowa zaczyna się od zaufania, nie od oceny.</p>
+      </article>
+      <article class="row">
+        <h3>Partyworking</h3>
+        <p>Jesteśmy obecni w klubach i na imprezach. Woda, informacja, wsparcie — po to, żeby można było bawić się bezpieczniej.</p>
+      </article>
+      <article class="row">
+        <h3>Profilaktyka HIV i testowanie</h3>
+        <p>Rzetelna wiedza o HIV i infekcjach przenoszonych drogą płciową oraz promocja regularnego, bezpiecznego testowania.</p>
+      </article>
+      <article class="row">
+        <h3>Edukacja seksualna i zdrowotna</h3>
+        <p>Wolna od wstydu edukacja o ciele, relacjach i zdrowiu — prowadzona językiem, którego młodzi ludzie faktycznie używają.</p>
+      </article>
+      <article class="row">
+        <h3>Redukcja szkód</h3>
+        <p>Ograniczamy ryzyko związane z substancjami psychoaktywnymi. Praktycznie, konkretnie, bez moralizowania.</p>
+      </article>
+      <article class="row">
+        <h3>Zdrowie psychiczne i przemoc</h3>
+        <p>Wsparcie w kryzysie, reakcja na przemoc, kierowanie do dalszej pomocy. Nikt nie zostaje z tym sam.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Jak pracujemy ===== -->
+<section class="band" aria-labelledby="jak-h">
+  <div class="band__photo" role="img" aria-label="Edukatorzy STACJI podczas pracy w terenie na moście, w tle panorama Warszawy"></div>
+  <div class="band__veil" aria-hidden="true"></div>
+  <div class="band__inner">
+    <div class="band__plate">
+      <span class="eyebrow eyebrow--on-dark">Jak pracujemy</span>
+      <h2 id="jak-h">Wychodzimy do ludzi. Budujemy relacje.</h2>
+      <p>Nie czekamy, aż ktoś zgłosi się po pomoc. Jesteśmy na dworcach, mostach, w klubach i online — tam, gdzie toczy się życie młodych warszawiaków. Zaczynamy od rozmowy i zaufania, nie od oceny.</p>
+      <ul class="tags" aria-label="Miejsca, w których pracujemy">
+        <li class="tag">Dworce</li>
+        <li class="tag">Ulice i mosty</li>
+        <li class="tag">Kluby</li>
+        <li class="tag">Online</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Ponad 20 lat ===== -->
+<section class="section section--warm" aria-labelledby="lata-h">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow">Ponad 20 lat</span>
+      <h2 id="lata-h">Kamienie milowe.</h2>
+    </div>
+    <ol class="stats">
+      <li class="stat">
+        <div class="stat__n">2003</div>
+        <p class="stat__d">Powstanie Stowarzyszenia z inicjatywy przy Polskim Towarzystwie Psychologicznym.</p>
+      </li>
+      <li class="stat">
+        <div class="stat__n">2004</div>
+        <p class="stat__d">Hostel Interwencyjny i pierwsze działania streetworkerskie w Warszawie.</p>
+      </li>
+      <li class="stat">
+        <div class="stat__n">Alter-Aktiv</div>
+        <p class="stat__d">Praca ze społecznością klubową i rozwój partyworkingu.</p>
+      </li>
+      <li class="stat">
+        <div class="stat__n">S3KTOR</div>
+        <p class="stat__d">Wyróżnienie oraz współzałożenie Ogólnopolskiej Sieci Organizacji Streetworkerskich.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section cta" aria-labelledby="cta-h">
+  <div class="wrap">
+    <span class="eyebrow">Zaangażuj się</span>
+    <h2 id="cta-h">Bądź obecny tam, gdzie są młodzi ludzie.</h2>
+    <div class="hero__cta">
+      <a class="btn btn--fill btn--lg" href="wesprzyj.html">Wesprzyj nas</a>
+      <a class="btn btn--ghost btn--lg" href="wesprzyj.html#wolontariat">Zostań wolontariuszem</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Stopka ===== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <h2>Kontakt</h2>
+        <ul class="foot__links">
+          <li><a href="tel:+48221234567">22 123 45 67</a></li>
+          <li><a href="mailto:biuro@programstacja.org.pl">biuro@programstacja.org.pl</a></li>
+          <li>Warszawa</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Organizacja</h3>
+        <ul class="foot__links">
+          <li><a href="#">Statut</a></li>
+          <li><a href="#">Sprawozdania</a></li>
+          <li><a href="#">Polityka ochrony dzieci</a></li>
+          <li><a href="#">RODO</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Dostępność</h3>
+        <ul class="foot__links">
+          <li><a href="#">Deklaracja dostępności</a></li>
+          <li><a href="szukam-pomocy.html#etr">Tekst łatwy do czytania</a></li>
+          <li><a href="szukam-pomocy.html#pjm">Informacja w PJM</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Śledź nas</h3>
+        <ul class="foot__links">
+          <li><a href="#">Instagram — @programstacja</a></li>
+          <li><a href="#">Facebook — @programstacja</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot__bar">
+      <img class="foot__logo" src="assets/img/logo-stacja.png" alt="">
+      <span>© 2026 Stowarzyszenie Program STACJA</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/stacja.js"></script>
+</body>
+</html>

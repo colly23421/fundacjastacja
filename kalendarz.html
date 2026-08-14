@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalendarz — Program STACJA</title>
+<meta name="description" content="Kalendarz Programu STACJA: dyżury streetworkerskie, warsztaty, testowanie i wydarzenia otwarte w Warszawie.">
+<link rel="stylesheet" href="assets/css/stacja.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Przejdź do treści</a>
+
+<!-- ===== Pasek dostępności ===== -->
+<div class="a11y">
+  <div class="a11y__inner">
+    <span class="a11y__label" id="a11y-label">Dostępność</span>
+
+    <div class="a11y__group" role="group" aria-labelledby="a11y-size-label">
+      <span class="sr-only" id="a11y-size-label">Rozmiar tekstu</span>
+      <button type="button" class="a11y__btn a11y__btn--a1" data-a11y-size="1" aria-pressed="true">A<span class="sr-only"> — rozmiar standardowy</span></button>
+      <button type="button" class="a11y__btn a11y__btn--a2" data-a11y-size="2" aria-pressed="false">A<span class="sr-only"> — tekst powiększony o jedną czwartą</span></button>
+      <button type="button" class="a11y__btn a11y__btn--a3" data-a11y-size="3" aria-pressed="false">A<span class="sr-only"> — tekst powiększony o połowę</span></button>
+    </div>
+
+    <div class="a11y__group">
+      <button type="button" class="a11y__btn" data-a11y="contrast" aria-pressed="false">Wysoki kontrast</button>
+      <button type="button" class="a11y__btn" data-a11y="underline" aria-pressed="false">Podkreśl linki</button>
+      <button type="button" class="a11y__btn" data-a11y="motion" aria-pressed="false">Zatrzymaj animacje</button>
+      <button type="button" class="a11y__btn" data-a11y="reset">Przywróć domyślne</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Nawigacja ===== -->
+<header>
+<nav class="nav" aria-label="Nawigacja główna">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html">
+      <img src="assets/img/logo-stacja.png" alt="Program STACJA — strona główna">
+    </a>
+
+    <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-panel">
+      <span class="bars" aria-hidden="true"></span>
+      <span class="nav__toggle-text">Menu</span>
+    </button>
+
+    <div class="nav__panel" id="nav-panel">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">O nas</a></li>
+        <li><a class="nav__link" href="index.html#obszary">Co robimy</a></li>
+        <li><a class="nav__link" href="kalendarz.html" aria-current="page">Kalendarz</a></li>
+        <li><a class="nav__link" href="szukam-pomocy.html">Szukam pomocy</a></li>
+        <li><a class="nav__link" href="wesprzyj.html">Zaangażuj się</a></li>
+      </ul>
+      <div class="nav__extras">
+        <a class="btn btn--fill" href="wesprzyj.html">Wesprzyj nas</a>
+        <div class="lang">
+          <a href="#" aria-current="true" lang="pl">PL</a>
+          <a href="#" lang="en" hreflang="en"><span class="sr-only">Switch to English — </span>EN</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero__media">
+    <div class="hero__photo hero__photo--blisko" role="img" aria-label="Portret młodej osoby patrzącej w bok"></div>
+    <div class="hero__fade" aria-hidden="true"></div>
+  </div>
+  <div class="hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow eyebrow--on-dark">Kalendarz dyżurów</span>
+      <h1>Kto i kiedy <em>przyjmuje.</em></h1>
+      <p class="hero__lead">Stały grafik dyżurów w naszej poradni w Warszawie. Na dyżury oznaczone „bez zapisów" wystarczy przyjść. Wszystkie konsultacje są bezpłatne, nie wymagają skierowania ani ubezpieczenia.</p>
+      <div class="hero__cta">
+        <a class="btn btn--fill btn--lg" href="#zapisy">Zapisz się na wizytę</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="grafik-h">
+  <div class="wrap">
+    <div class="section__head section__head--narrow">
+      <span class="eyebrow">Grafik tygodniowy</span>
+      <h2 id="grafik-h">Poradnia, ul. Przykładowa 12</h2>
+      <p class="section__intro">Grafik jest stały, ale zdarzają się zmiany — jeśli przychodzisz z daleka, zadzwoń rano i upewnij się, że dyżur się odbywa.</p>
+    </div>
+
+    <ul class="tags" style="margin-top:0;margin-bottom:8px">
+      <li class="tag" style="border-color:var(--brand);background:var(--brand);color:var(--ink)">Bez zapisów — po prostu przyjdź</li>
+      <li class="tag" style="border-color:var(--rule);color:var(--tx-quiet)">Zapisy — zadzwoń albo napisz</li>
+    </ul>
+
+    <div class="day">
+      <h2 class="day__name">Poniedziałek</h2>
+      <ul class="duties">
+        <li class="duty">
+          <div class="duty__date"><div class="duty__day">10–14</div></div>
+          <div class="duty__body">
+            <h3>Anna Kowalska</h3>
+            <p class="duty__meta"><span>psycholożka</span></p>
+            <p>Konsultacja pierwszego kontaktu. Można przyjść i poczekać na swoją kolej.</p>
+          </div>
+          <span class="duty__kind duty__kind--open">Bez zapisów</span>
+        </li>
+        <li class="duty">
+          <div class="duty__date"><div class="duty__day">15–19</div></div>
+          <div class="duty__body">
+            <h3>Michał Zieliński</h3>
+            <p class="duty__meta"><span>specjalista terapii uzależnień</span></p>
+            <p>Rozmowa o substancjach — bez oceniania i bez zgłaszania gdziekolwiek.</p>
+          </div>
+          <span class="duty__kind">Zapisy</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <h2 class="day__name">Wtorek</h2>
+      <ul class="duties">
+        <li class="duty">
+          <div class="duty__date"><div class="duty__day">12–16</div></div>
+          <div class="duty__body">
+            <h3>Karolina Nowak</h3>
+            <p class="duty__meta"><span>doradczyni ds. zdrowia seksualnego</span></p>
+            <p>Pytania o HIV, choroby przenoszone drogą płciową, antykoncepcję i testowanie.</p>
+          </div>
+          <span class="duty__kind duty__kind--open">Bez zapisów</span>
+        </li>
+        <li class="duty">
+          <div class="duty__date"><div class="duty__day">16–20</div></div>
+          <div class="duty__body">
+            <h3>Piotr Lewandowski</h3>
+            <p class="duty__meta"><span>prawnik</span></p>
+            <p>Sprawy urzędowe, meldunek, dokumenty, prawa osoby nieletniej.</p>
+          </div>
+          <span class="duty__kind">Zapisy</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <h2 class="day__name">Środa</h2>
+      <ul class="duties">
+        <li class="duty">
+          <div class="duty__date"><div class="duty__day">10–14</div></div>
+          <div class="duty__body">
+            <h3>Anna Kowalska</h3>
+            <p class="duty__meta"><span>psycholożka</span></p>
+            <p>Kolejne spotkania dla osób, które były już wcześniej.</p>
+          </div>
+          <span class="duty__kind">Zapisy</span>
+        </li>
+        <li class="duty">
+          <div class="duty__date"><div class="duty__day">17–21</div></div>
+          <div class="duty__body">
+            <h3>Zespół streetworkerski</h3>
+            <p class="duty__meta"><span>dyżur wyjazdowy</span></p>
+            <p>Tego dnia poradnia zamknięta — jesteśmy przy Dworcu Centralnym.</p>
+          </div>
+          <span class="duty__kind duty__kind--open">Teren</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <h2 class="day__name">Czwartek</h2>
+      <ul class="duties">
+        <li class="duty">
+          <div class="duty__date"><div class="duty__day">11–15</div></div>
+          <div class="duty__body">
+            <h3>Magdalena Wójcik</h3>
+            <p class="duty__meta"><span>psychoterapeutka</span></p>
+            <p>Wsparcie w kryzysie, praca z lękiem i obniżonym nastrojem.</p>
+          </div>
+          <span class="duty__kind">Zapisy</span>
+        </li>
+        <li class="duty">
+          <div class="duty__date"><div class="duty__day">15–19</div></div>
+          <div class="duty__body">
+            <h3>Karolina Nowak</h3>
+            <p class="duty__meta"><span>doradczyni ds. zdrowia seksualnego</span></p>
+            <p>Bezpłatne i anonimowe testowanie w kierunku HIV, wynik w 20 minut.</p>
+          </div>
+          <span class="duty__kind duty__kind--open">Bez zapisów</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <h2 class="day__name">Piątek</h2>
+      <ul class="duties">
+        <li class="duty">
+          <div class="duty__date"><div class="duty__day">12–16</div></div>
+          <div class="duty__body">
+            <h3>Michał Zieliński</h3>
+            <p class="duty__meta"><span>specjalista terapii uzależnień</span></p>
+            <p>Otwarty dyżur — można wpaść bez umawiania.</p>
+          </div>
+          <span class="duty__kind duty__kind--open">Bez zapisów</span>
+        </li>
+        <li class="duty">
+          <div class="duty__date"><div class="duty__day">16–20</div></div>
+          <div class="duty__body">
+            <h3>Tomasz Mazur</h3>
+            <p class="duty__meta"><span>pedagog</span></p>
+            <p>Sprawy szkolne, konflikt w domu, mediacja z rodzicami.</p>
+          </div>
+          <span class="duty__kind">Zapisy</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <h2 class="day__name">Sobota</h2>
+      <ul class="duties">
+        <li class="duty">
+          <div class="duty__date"><div class="duty__day">11–15</div></div>
+          <div class="duty__body">
+            <h3>Dyżur dwuosobowy</h3>
+            <p class="duty__meta"><span>psycholog + streetworker</span></p>
+            <p>Sobotni dyżur dla osób, które w tygodniu nie mogą przyjść.</p>
+          </div>
+          <span class="duty__kind duty__kind--open">Bez zapisów</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="help" id="zapisy" style="margin-top:clamp(40px,6vw,64px)">
+      <h2>Zapisy i pytania</h2>
+      <p>Nie musisz mówić, w jakiej sprawie dzwonisz. Wystarczy, że umówimy termin.</p>
+      <div class="help__row">
+        <div class="help__item">
+          <div class="help__k">Telefon · pon–pt 10:00–18:00</div>
+          <div class="help__v"><a href="tel:+48221234567">22 123 45 67</a></div>
+        </div>
+        <div class="help__item">
+          <div class="help__k">E-mail</div>
+          <div class="help__v" style="font-size:1.0625rem"><a href="mailto:poradnia@programstacja.org.pl">poradnia@programstacja.org.pl</a></div>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:24px;font-size:.875rem;color:var(--tx-quiet);max-width:62ch">Nazwiska, godziny i adres są przykładowe — do podmiany na realny grafik. Docelowo warto podpiąć tę tabelę pod kalendarz zespołu, żeby zmiany nie wymagały edycji strony.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Stopka ===== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <h2>Kontakt</h2>
+        <ul class="foot__links">
+          <li><a href="tel:+48221234567">22 123 45 67</a></li>
+          <li><a href="mailto:biuro@programstacja.org.pl">biuro@programstacja.org.pl</a></li>
+          <li>Warszawa</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Organizacja</h3>
+        <ul class="foot__links">
+          <li><a href="#">Statut</a></li>
+          <li><a href="#">Sprawozdania</a></li>
+          <li><a href="#">Polityka ochrony dzieci</a></li>
+          <li><a href="#">RODO</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Dostępność</h3>
+        <ul class="foot__links">
+          <li><a href="#">Deklaracja dostępności</a></li>
+          <li><a href="szukam-pomocy.html#etr">Tekst łatwy do czytania</a></li>
+          <li><a href="szukam-pomocy.html#pjm">Informacja w PJM</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Śledź nas</h3>
+        <ul class="foot__links">
+          <li><a href="#">Instagram — @programstacja</a></li>
+          <li><a href="#">Facebook — @programstacja</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot__bar">
+      <img class="foot__logo" src="assets/img/logo-stacja.png" alt="">
+      <span>© 2026 Stowarzyszenie Program STACJA</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/stacja.js"></script>
+</body>
+</html>
